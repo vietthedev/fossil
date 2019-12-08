@@ -2,6 +2,8 @@
 
 import React, { useReducer } from 'react'
 import { BrowserRouter } from 'react-router-dom'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faMapMarkerAlt, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import DefaultContext from '../../store/context'
 import reducers from '../../store/reducers'
@@ -13,6 +15,8 @@ import Footer from '../footer'
 import { menuItems } from '../../store/menu-items'
 import { orders } from '../../store/orders'
 
+library.add(faMapMarkerAlt, faPhoneAlt, faEnvelope)
+
 const initialState = {
   user: {
     id: 1,
@@ -20,13 +24,23 @@ const initialState = {
     photoUrl: 'https://portfolio.huynhviet.com/static/img/avatar.png'
   },
   contact: {
-    address: '384 Hoàng Diệu, Phường 6, Quận 4, Hồ Chí Minh',
-    phoneNumber: '028 3826 8160',
-    email: 'phuong@fossil.com'
+    address: {
+      icon: 'map-marker-alt',
+      content: '384 Hoàng Diệu, Phường 6, Quận 4, Hồ Chí Minh'
+    },
+    phoneNumber: {
+      icon: 'phone-alt',
+      content: '028 3826 8160'
+    },
+    email: {
+      icon: 'envelope',
+      content: 'phuong@fossil.com'
+    }
   },
   menuItems,
   orders
 }
+
 const App = () => {
   const [state, dispatch] = useReducer(reducers, initialState)
 

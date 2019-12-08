@@ -27,11 +27,21 @@ export type OrderFilterAction = {
   payload: number
 }
 
+export type ContactMethod = {
+  icon: string,
+  content: string
+}
+
 export type GlobalState = {
   user: {
     id: number,
     name: string,
     photoUrl: string
+  },
+  contact: {
+    address: ContactMethod,
+    phoneNumber: ContactMethod,
+    email: ContactMethod
   },
   menuItems: MenuItem[],
   orders: Order[]
