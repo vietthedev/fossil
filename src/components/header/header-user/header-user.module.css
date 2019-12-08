@@ -1,0 +1,25 @@
+.user {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-left: 2rem;
+  padding: .5rem 1rem;
+  border: 0;
+  border-radius: 5px;
+  background-color: #252525;
+}
+
+.user:hover {
+  cursor: pointer;
+}
+
+.user:focus {
+  outline: 0;
+}
+
+.userPhoto {
+  margin-right: .5rem;
+  max-width: 2rem;
+  max-height: 2rem;
+  border-radius: 50%;
+}

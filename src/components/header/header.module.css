@@ -1,0 +1,9 @@
+.pageHeader {
+  background-image: linear-gradient(to right, #272727, #000);
+}
+
+.navigationBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

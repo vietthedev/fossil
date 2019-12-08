@@ -1,0 +1,15 @@
+.menuItem {
+  display: inline;
+  margin-left: 1.5rem;
+  text-transform: uppercase;
+}
+
+.menuItem a {
+  color: #c4c4c4;
+  text-decoration: none;
+}
+
+.menuItem a:hover, .menuItem a.active {
+  color: #f3f3f3;
+  text-decoration: underline;
+}
