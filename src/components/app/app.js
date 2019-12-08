@@ -3,7 +3,12 @@
 import React, { useReducer } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faMapMarkerAlt, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import {
+  faMapMarkerAlt,
+  faPhoneAlt,
+  faEnvelope,
+  faChevronLeft
+} from '@fortawesome/free-solid-svg-icons'
 
 import DefaultContext from '../../store/context'
 import reducers from '../../store/reducers'
@@ -15,7 +20,7 @@ import Footer from '../footer'
 import { menuItems } from '../../store/menu-items'
 import { orders } from '../../store/orders'
 
-library.add(faMapMarkerAlt, faPhoneAlt, faEnvelope)
+library.add(faMapMarkerAlt, faPhoneAlt, faEnvelope, faChevronLeft)
 
 const initialState = {
   user: {

@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { useHistory } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Content from '../content'
 
@@ -14,7 +15,7 @@ const Breadcrumb = () => {
     <div className={styles.breadcrumb}>
       <Content>
         <button className={styles.backButton} onClick={() => history.goBack()}>
-          &lt; back
+          <FontAwesomeIcon icon='chevron-left' /> back
         </button>
       </Content>
     </div>
