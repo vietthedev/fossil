@@ -11,6 +11,7 @@
 
 .user:hover {
   cursor: pointer;
+  background-color: #3b3b3b;
 }
 
 .user:focus {

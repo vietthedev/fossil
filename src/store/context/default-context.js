@@ -6,7 +6,7 @@ import type {
   GlobalState,
   MenuItemAction,
   OrderFilterAction
-} from '../common/types'
+} from '../../common/types'
 
 type DefaultContextType = {
   state: GlobalState,
