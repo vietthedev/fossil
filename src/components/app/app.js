@@ -44,7 +44,8 @@ const initialState = {
     }
   },
   menuItems,
-  orders,
+  orders: orders.filter(order => order.status === ORDER_STATUS.CONFIRM),
+  totalOrders: orders.length,
   orderStatus: ORDER_STATUS.CONFIRM
 }
 

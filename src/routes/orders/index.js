@@ -9,6 +9,7 @@ import Content from '../../components/content'
 import LeftSide from '../../components/left-side'
 import RightSide from '../../components/right-side'
 import OrderStatusFilter from '../../components/order-status-filter'
+import OrderList from '../../components/order-list'
 
 const OrderRoute = () => (
   <Route path='/orders'>
@@ -21,7 +22,9 @@ const OrderRoute = () => (
       <LeftSide>
         <OrderStatusFilter />
       </LeftSide>
-      <RightSide />
+      <RightSide>
+        <OrderList />
+      </RightSide>
     </Content>
   </Route>
 )

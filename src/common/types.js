@@ -45,5 +45,6 @@ export type GlobalState = {
   },
   menuItems: MenuItem[],
   orders: Order[],
-  orderStatus: number
+  orderStatus: number,
+  totalOrders: number
 }

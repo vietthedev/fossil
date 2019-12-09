@@ -1,0 +1,69 @@
+.orderTable {
+  border: 1px solid #e0e0e0;
+  border-spacing: 0;
+}
+
+.orderTable th {
+  padding: .5rem 3rem;
+
+  color: #fff;
+  background-color: #000;
+}
+
+.orderTable td {
+  padding: .5rem 3rem;
+}
+
+.orderTable tbody td {
+  border-top: 1px solid #e0e0e0;
+}
+
+.orderTable tfoot td {
+  border-top: 1px solid #e0e0e0;
+  line-height: 3rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.name {
+  composes: bold;
+
+  white-space: nowrap;
+}
+
+.level {
+  width: 9rem;
+  line-height: 1.5rem;
+  border-radius: 1rem;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.totalOrders {
+  color: #666666;
+}
+
+.page {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+
+.page li {
+  display: inline;
+  margin-left: 1.75rem;
+  padding: .5rem;
+}
+
+.page li.active {
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+}

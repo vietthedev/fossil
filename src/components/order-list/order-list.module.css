@@ -1,0 +1,8 @@
+.orderList {
+  flex-grow: 1;
+}
+
+.numOrders {
+  color: #2a9a17;
+  font-weight: 500;
+}
