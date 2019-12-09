@@ -22,7 +22,7 @@ export type Order = {
   status: number
 }
 
-export type OrderFilterAction = {
+export type OrderAction = {
   type: string,
   payload: number
 }
@@ -44,5 +44,6 @@ export type GlobalState = {
     email: ContactMethod
   },
   menuItems: MenuItem[],
-  orders: Order[]
+  orders: Order[],
+  orderStatus: number
 }

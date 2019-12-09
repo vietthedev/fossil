@@ -19,6 +19,7 @@ import Footer from '../footer'
 
 import { menuItems } from '../../store/menu-items'
 import { orders } from '../../store/orders'
+import { ORDER_STATUS } from '../../common/constants'
 
 library.add(faMapMarkerAlt, faPhoneAlt, faEnvelope, faChevronLeft)
 
@@ -43,7 +44,8 @@ const initialState = {
     }
   },
   menuItems,
-  orders
+  orders,
+  orderStatus: ORDER_STATUS.CONFIRM
 }
 
 const App = () => {

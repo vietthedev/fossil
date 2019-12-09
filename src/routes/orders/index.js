@@ -8,6 +8,7 @@ import Breadcrumb from '../../components/breadcrumb'
 import Content from '../../components/content'
 import LeftSide from '../../components/left-side'
 import RightSide from '../../components/right-side'
+import OrderStatusFilter from '../../components/order-status-filter'
 
 const OrderRoute = () => (
   <Route path='/orders'>
@@ -17,7 +18,9 @@ const OrderRoute = () => (
     />
     <Breadcrumb />
     <Content>
-      <LeftSide />
+      <LeftSide>
+        <OrderStatusFilter />
+      </LeftSide>
       <RightSide />
     </Content>
   </Route>

@@ -1,0 +1,18 @@
+.orderStatus {
+  margin: 0;
+  list-style: none;
+}
+
+.orderStatus li {
+  width: 15rem;
+  line-height: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.orderStatus li:hover, .active {
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+}

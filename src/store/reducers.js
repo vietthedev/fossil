@@ -3,11 +3,11 @@
 import { menuItemReducer } from './menu-items'
 import { orderReducer } from './orders'
 
-import type { GlobalState, MenuItemAction, OrderFilterAction } from '../common/types'
+import type { GlobalState, MenuItemAction, OrderAction } from '../common/types'
 
 const reduceReducers = (...reducers) => (
   prevState: GlobalState,
-  value: MenuItemAction | OrderFilterAction,
+  value: MenuItemAction | OrderAction,
   ...args: any
 ) =>
   reducers.reduce(

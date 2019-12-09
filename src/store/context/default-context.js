@@ -5,12 +5,12 @@ import React from 'react'
 import type {
   GlobalState,
   MenuItemAction,
-  OrderFilterAction
+  OrderAction
 } from '../../common/types'
 
 type DefaultContextType = {
   state: GlobalState,
-  dispatch: (action: MenuItemAction | OrderFilterAction) => void
+  dispatch: (action: MenuItemAction | OrderAction) => void
 }
 
 const DefaultContext = React.createContext<DefaultContextType>({
