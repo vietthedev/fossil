@@ -5,6 +5,9 @@ import { Route } from 'react-router-dom'
 
 import PageInfo from '../../components/page-info'
 import Breadcrumb from '../../components/breadcrumb'
+import Content from '../../components/content'
+import LeftSide from '../../components/left-side'
+import RightSide from '../../components/right-side'
 
 const OrderRoute = () => (
   <Route path='/orders'>
@@ -13,6 +16,10 @@ const OrderRoute = () => (
       description='Order information and payment'
     />
     <Breadcrumb />
+    <Content>
+      <LeftSide />
+      <RightSide />
+    </Content>
   </Route>
 )
 

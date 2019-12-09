@@ -1,0 +1,10 @@
+.leftSide {
+  width: 30%;
+
+  padding: 1rem 1rem 1rem 0;
+
+  display: flex;
+  justify-content: flex-end;
+
+  background-color: #f2f2f2
+}
